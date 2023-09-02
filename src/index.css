@@ -1,13 +1,65 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+body {
+  font-family: "Karla", sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  height: 65px;
+  width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav--logo {
+  display: flex;
+}
+.nav--image {
+  width: 31.31px;
+  height: 26.22px;
+  margin: 19px auto 19px 20px;
+}
+.nav--logo h1 {
+  font-size: 20.75px;
+  margin-top: 21px;
+  margin-left: 10px;
+  font-weight: 700;
+  line-height: 24.25px;
+}
+.nav--right {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.25px;
+  margin-right: 40px;
+}
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+}
+
+.form--input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #d5d4d8;
+  text-indent: 5px;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+main {
+  padding: 36px;
 }
