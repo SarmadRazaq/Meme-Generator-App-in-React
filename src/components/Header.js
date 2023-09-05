@@ -1,17 +1,11 @@
 import React from "react";
 
-const Header = () => {
+export default function Header() {
   return (
-    <div>
-      <nav className="navbar">
-        <div className="nav--logo">
-          <img src="./troll-face.png" alt="trollface" className="nav--image" />
-          <h1>MemeGenerator</h1>
-        </div>
-        <div className="nav--right">React Course - Project 3</div>
-      </nav>
-    </div>
+    <header className="header">
+      <img src="./troll-face.png" alt="img" className="header--image" />
+      <h2 className="header--title">Meme Generator</h2>
+      <h4 className="header--project">React Course - Project 3</h4>
+    </header>
   );
-};
-
-export default Header;
+}
